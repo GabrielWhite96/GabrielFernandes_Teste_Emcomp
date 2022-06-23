@@ -1,0 +1,10 @@
+'<tr>
+    <td id="name' + i + '">' + contacts[i].name + '</td>
+    <td id="email' + i + '">' + contacts[i].email + '</td>
+    <td id="phone' + i + '">' + contacts[i].phone + '</td>
+    <td id="idade' + i + '">' + contacts[i].idade + '</td>
+    <td>
+        <button class="btn btn-warning" onclick=updateContact(' + i + ')>Update</button>
+        <button class="btn btn-danger" onclick=deleteContact(' + i + ')>Delete</button>
+    </td>
+</tr>'

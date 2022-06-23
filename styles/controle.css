@@ -1,0 +1,181 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: monospace;
+  background-image:url(../img/wallpaperflare.com_wallpaper\ \(2\).jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
+}
+
+.wallpaper{
+  text-align: center;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 50px;
+}
+
+h2 {
+  background-color: #333;
+  padding: 12px;
+  font-weight: bolder;
+  letter-spacing: .1em;
+}
+
+
+.container{
+  border: solid 2px #333;
+  border-radius: 20px;
+  margin: 0px 100px;
+  padding: 20px 0px;
+  position: relative;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.glass{
+  backdrop-filter: blur(12px);
+}
+
+.text-center{
+  margin-bottom: 10px;
+}
+
+.form-inline{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 250px;
+  margin: 0 auto;
+}
+
+.form-control{
+  border: none;
+  border-left : solid 2px #333;
+  background: transparent;
+  color: white;
+  padding: 5px 5px 5px 10px;
+}
+
+.form-control::placeholder{
+  color: rgb(192, 192, 192);
+}
+
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.btn-submit {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 20px 0px;
+  background: transparent;
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  background: #42157c;
+}
+.btn-submit:hover {
+  background: transparent;
+  box-shadow:none;
+}
+.btn-submit:before,
+.btn-submit:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #42157c;
+  transition:400ms ease all;
+}
+.btn-submit:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.btn-submit:hover:before,
+.btn-submit:hover:after{
+  width:100%;
+  transition:600ms ease all;
+}
+
+.table{
+  margin: 0 auto;
+  width: 1270px;
+  font-size: 1em;
+}
+
+.tabela-head{
+  background-color: black;
+  color: #fff;
+}
+
+
+.tabela-item{
+  background-color: #fff;
+  color: black;
+  padding: 7px;
+}
+
+.carrossel {
+  overflow: hidden;
+  width: 1270px;
+  margin: 0 auto;
+}
+
+.container-carrossel {
+  margin: 20px 0px;
+  margin-top: 100px;
+  display: flex;
+  gap: 8px;
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(0);
+}
+
+.carrossel__imagem {
+  object-fit: cover;
+  width: 310px;
+  height: 490px;
+}
+
+.btn{
+  border: 1px solid #333;
+  border-radius: 5px;
+  margin: 0px 10px;
+  padding: 3px 5px;
+  color: white;
+  background-color: #333;
+}
+.btn-update:hover{
+  border: 1px solid rgb(104, 104, 104);
+  background-color: rgb(104, 104, 104);
+  transition: 500ms;
+}
+
+.btn-delete:hover{
+  border: 1px solid rgb(255, 31, 31);
+  background-color: rgb(255, 31, 31);
+  transition: 500ms;
+}

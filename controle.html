@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/controle.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wallpaper">
+        <div class="container glass">
+            <h1 class="text-center">Contatos<h1>
+            <div class="form-inline">
+                <label for="inputName"></label><input placeholder="Name..." class="form-control" id="inputName" />
+                <label for="inputEmail"></label><input type="email" placeholder="Email Address..." class="form-control" id="inputEmail" />
+                <label for="inputPhone"></label><input type="tel" placeholder="Phone Number..." class="form-control" id="inputPhone" />
+                <label for="inputIdade"></label><input type="number" placeholder="Idade Number..." class="form-control" id="inputIdade" />
+                <div id="submitButtons"><button type="button" class="custom-btn btn-submit" onclick="addNewContact()">Adicionar</button></div>
+            </div>
+            <h2>Meus Contatos</h2>
+            <table class="table">
+                <thead class="tabela-head">
+                    <tr>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Idade</th>
+                        <th>Comandos</th>
+                    </tr>
+                </thead>
+                <tbody id="displayContacts">
+                </tbody>
+            </table>
+            <script src="js/app.js"></script>
+            <div>
+                <main class="principal">
+                    <section class="carrossel">
+                        <div class="container-carrossel" id="img">
+                            <img src="img/banner-mobile1.jpg" alt="Banner do filme" class="carrossel__imagem">
+                            <img src="img/banner-mobile2.jpg" alt="Banner do filme" class="carrossel__imagem">
+                            <img src="img/banner-mobile3.jpg" alt="Banner do filme" class="carrossel__imagem">
+                            <img src="img/banner-mobile4.jpg" alt="Banner do filme" class="carrossel__imagem">
+                            <img src="img/banner-mobile5.jpeg" alt="Banner do filme" class="carrossel__imagem">
+                            <img src="img/banner-mobile6.jpg" alt="Banner do filme" class="carrossel__imagem">
+                            <img src="img/banner-mobile7.jpg" alt="Banner do filme" class="carrossel__imagem">
+                            <img src="img/banner-mobile8.jpg" alt="Banner do filme" class="carrossel__imagem">
+                            <img src="img/banner-mobile9.jpg" alt="Banner do filme" class="carrossel__imagem">
+                            <img src="img/banner-mobile10.jpg" alt="Banner do filme" class="carrossel__imagem">
+                            <img src="img/banner-mobile11.jpg" alt="Banner do filme" class="carrossel__imagem">
+                            <img src="img/banner-mobile12.jpg" alt="Banner do filme" class="carrossel__imagem">
+                        </div>
+                    </section>
+                    <script src="js/carrossel.js"></script>
+                </main>
+            </div>
+        </div>
+    </div>
+       
+</body>
+</html>
